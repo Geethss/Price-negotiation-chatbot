@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Negotiation Chatbot</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Negotiation Chatbot</h1>
+        <p>Start a negotiation with the bot by entering your price and message below:</p>
+        
+        <form id="negotiation-form">
+            <label for="price">Enter your price:</label>
+            <input type="number" id="price" name="price" required>
+            
+            <label for="message">Enter your message:</label>
+            <input type="text" id="message" name="message" required>
+            
+            <button type="submit">Submit Offer</button>
+        </form>
+        
+        <div class="response">
+            <h3>Chatbot's Response:</h3>
+            <p id="bot-response"></p>
+        </div>
+    </div>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
